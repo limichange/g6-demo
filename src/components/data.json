@@ -1,18 +1,6 @@
 {
   "children": [
     {
-      "children": [],
-      "name": "@ali/color-cal"
-    },
-    {
-      "children": [],
-      "name": "@ali/g-actived"
-    },
-    {
-      "children": [],
-      "name": "@ali/g-base"
-    },
-    {
       "children": [
         {
           "children": [],
@@ -32,21 +20,6 @@
         }
       ],
       "name": "@ali/g-canvas"
-    },
-    {
-      "name": "@ali/g-graph-layout"
-    },
-    {
-      "children": [],
-      "name": "@ali/g-math"
-    },
-    {
-      "children": [],
-      "name": "@ali/g-matrix"
-    },
-    {
-      "children": [],
-      "name": "@ali/g-path-util"
     },
     {
       "children": [

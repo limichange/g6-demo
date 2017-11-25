@@ -32,9 +32,7 @@ export default {
       .source(data)
     tree
       .node()
-      .label(function (obj) {
-        return obj.name
-      })
+      .label(obj => obj.name)
       .style({
         fillOpacity: 1
       })
