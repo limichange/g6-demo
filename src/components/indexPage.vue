@@ -16,18 +16,20 @@ export default {
     }
   },
   mounted () {
+    const { Layouts, Tree } = G6
     const layoutCfg = {
       direction: 'TB'
     }
 
-    const tree = new G6.Tree({
+    const tree = new Tree({
       id: 'mountNode',
       fitView: 'autoZoom',
-      layoutFn: G6.Layouts.CompactBoxTree,
+      layoutFn: Layouts.CompactBoxTree,
       layoutCfg: layoutCfg
     })
 
-    tree.source(data)
+    tree
+      .source(data)
     tree
       .node()
       .label(function (obj) {
@@ -36,8 +38,11 @@ export default {
       .style({
         fillOpacity: 1
       })
-    tree.edge().shape('smooth')
-    tree.render()
+    tree
+      .edge()
+      .shape('smooth')
+    tree
+      .render()
   }
 }
 </script>
